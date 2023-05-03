@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;0,900;0,1000;1,200;1,400;1,700;1,900;1,1000&display=swap');
 
+:root {
+  --main-font: 'Nunito', san-serif;
+  --accent: #F7D060;
+  --X-color: #FF6D60;
+  --O-color: #98D8AA;
+}
+
+/* https://youtu.be/oG6XPy1t1KA?t=120
+(Adding Tailwind CSS to an Existing Project) */
+
 .grid {
   display: grid;
   grid-gap: 1px;
@@ -12,13 +22,13 @@
   font-size: 5rem;
   color: #e8e5e5;
   border: solid 1px black;
-  font-family: 'Nunito', sans-serif;
+  font-family: var(--main-font);
 }
 .square_O {
-  background-color: rgb(87, 218, 21);
+  background-color: var(--O-color);
 }
 .square_X {
-  background-color: crimson;
+  background-color: var(--X-color);
 }
 
 .reset {
@@ -32,7 +42,7 @@
   border-radius: 6px;
   padding: 0.5rem 1rem;
   cursor: pointer;
-  font-family: 'Nunito', sans-serif;
+  font-family: var(--main-font);
   text-align: center;
   transition: all ease 0.3s;
 }
@@ -43,16 +53,16 @@
 
 h2 {
   font-size: 3rem;
-  font-family: 'Nunito', sans-serif;
+  font-family: var(--main-font);
   margin-bottom: 5px;
 }
 
 .your-turn {
   font-size: 2rem;
-  font-family: 'Nunito', sans-serif;
+  font-family: var(--main-font);
 }
 .lets-play {
   text-align: center;
-  font-family: 'Nunito', sans-serif;
+  font-family: var(--main-font);
   margin-bottom: 10px;
 }

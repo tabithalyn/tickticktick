@@ -89,7 +89,7 @@ export default function Board() {
         })}
       </div>
       <div className='reset'>
-        <button onClick={reset}>RESET</button>
+        <button onClick={reset} className='text-blue-600'>RESET</button>
       </div>
     </div>
   );
